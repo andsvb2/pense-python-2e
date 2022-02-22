@@ -3,13 +3,18 @@
 
 import turtle
 
-bob = turtle.Turtle()
-
-def square(x):
+# Definições das funções
+def square(x, comprimento):
     for i in range(4):
-        x.fd(100)
+        x.fd(comprimento)
         x.lt(90)
 
-square(bob)
+
+# Cria 'bob'.
+bob = turtle.Turtle()
+
+
+# Chama a função
+square(bob, 150)
 
 turtle.mainloop()
